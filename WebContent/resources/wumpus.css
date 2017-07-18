@@ -1,0 +1,37 @@
+@CHARSET "ISO-8859-1";
+/* CSS for Hunt the Wumpus */
+
+body {
+	font-family:'Raleway', sans-serif;
+	font-size:small;	
+}
+#board {
+	background-color:#ff0000;
+	height:250px;
+	width:250px;
+}
+#board td {
+	background-color:#ffc1c1;	
+}
+#feedback {
+	background-color:#ffffff;
+	text-align:center;
+	color:#ff0000 !important;
+	border:3px solid #ff0000;
+	height:100px;
+	width:230px;
+	padding:10px;
+	
+}
+
+#movementControls {
+	
+	top:240px;
+	left:300px;
+}
+
+#arrowControls {
+	
+	top:240px;
+	left:475px;
+}

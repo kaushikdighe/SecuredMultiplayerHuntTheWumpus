@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>HuntTheWumpus</display-name>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.swe681.controller.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SignUp</servlet-name>
+    <servlet-class>com.swe681.controller.SignUp</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SignUp</servlet-name>
+    <url-pattern>/SignUp</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>CreateNewGame</servlet-name>
+    <servlet-class>com.swe681.controller.CreateNewGame</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateNewGame</servlet-name>
+    <url-pattern>/CreateNewGame</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>JoinOldGame</servlet-name>
+    <servlet-class>com.swe681.controller.JoinOldGame</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JoinOldGame</servlet-name>
+    <url-pattern>/JoinOldGame</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ActionServlet</servlet-name>
+    <servlet-class>com.swe681.controller.ActionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ActionServlet</servlet-name>
+    <url-pattern>/ActionServlet/*</url-pattern>
+  </servlet-mapping>
+</web-app>
